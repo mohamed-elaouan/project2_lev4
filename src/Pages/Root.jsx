@@ -29,7 +29,6 @@ const Root = () => {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Header setMenuToggle={setMenuToggle} MenuToggle={MenuToggle} />
-
         <Stack
           height={"fit-content"}
           divider={<Divider orientation="vertical" flexItem />}

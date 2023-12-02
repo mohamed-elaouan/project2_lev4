@@ -1,4 +1,4 @@
-import { Box, Button, Checkbox, IconButton, useTheme } from "@mui/material";
+import { Box, Button, Checkbox, IconButton, MenuItem, useTheme } from "@mui/material";
 import Card from "@mui/material/Card";
 import CardHeader from "@mui/material/CardHeader";
 import CardMedia from "@mui/material/CardMedia";
@@ -6,7 +6,7 @@ import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
 import Avatar from "@mui/material/Avatar";
 import Typography from "@mui/material/Typography";
-import {  teal } from "@mui/material/colors";
+import { teal } from "@mui/material/colors";
 import ShareIcon from "@mui/icons-material/Share";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import Menu from "@mui/material/Menu";
@@ -73,9 +73,9 @@ const ContentP = () => {
         "aria-labelledby": "basic-button",
       }}
     >
-      <Button>Profile</Button>
-      <Button>My account</Button>
-      <Button>Logout</Button>
+      <MenuItem onClick={handleClose}>Profile</MenuItem>
+      <MenuItem onClick={handleClose}>My account</MenuItem>
+      <MenuItem onClick={handleClose}>Logout</MenuItem>
     </Menu>
   );
   return (
